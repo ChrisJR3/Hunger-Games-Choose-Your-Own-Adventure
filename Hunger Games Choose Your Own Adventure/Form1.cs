@@ -314,115 +314,165 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                         yellowImage.Visible = false;
                         yellowLabel.Visible = false;
+                        
+                        Thread.Sleep(10000);
+                        scene = 42;
 
                         break;
                     case 21:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "As you run into the forest you pick up a bag of supplies. It continues food, water, and a knife.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
                     case 22:
-                        outputLabel.Text = "";
-                        redLabel.Text = "";
-                        blueLabel.Text = "";
+                        outputLabel.Text = "It starts to get dark. Do you want to try and camouflage or run further into the forest?";
+                        redLabel.Text = "Camouflage yourself in the tree.";
+                        blueLabel.Text = "Run into the forest.";
                         break;
                     case 23:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "Probably a good choice. You run further and further away to the edge of the arena and sleep below a tree.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
                     case 24:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "As you wake up in the morning you find a bush full of berries beside you.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
                     case 25:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "Starving, you go to eat the berries. As it turns out, they are poisonous and you die.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
                     case 26:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You recognize them as poisonous and put them in your pocket for later. You hear wolves running around near you.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
                     case 27:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "As you run away you encounter the last remaining survivor. Do you want to switch the berries in his food supply with the poisonous ones, hide in a bush, or run at him with your knife?";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
                     case 28:
-                        outputLabel.Text = "";
-                        redLabel.Text = "";
-                        blueLabel.Text = "";
+                        outputLabel.Text = "You run bravely at them with your knife and are eaten almost instantly.";
+                        redLabel.Text = "Attack them.";
+                        blueLabel.Text = "Switch the berries";
+                        
+                        yellowImage.Visible = true;
+                        yellowLabel.Visible = true;
+
+                        yellowLabel.Text = "Hide in a bush.";
                         break;
                     case 29:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You switch the berries successfully, and watch as he mistakenly eats the poisoned ones and dies. ";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        yellowImage.Visible = false;
+                        yellowLabel.Visible = false;
+                        
+                        Thread.Sleep(10000);
+                        scene = 42;
+                        
                         break;
                     case 30:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You try to hide in a bush, but he sees you instantly and stabs you.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        yellowImage.Visible = false;
+                        yellowLabel.Visible = false;
+                        
                         break;
                     case 31:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You run at him with your knife, but he turns around and stabs you. You die.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        yellowImage.Visible = false;
+                        yellowLabel.Visible = false;
+                        
                         break;
                     case 32:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You successfully camouflage yourself in the tree and fall asleep.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
                     case 33:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You wake up in the morning and hear people rustling around below you. Do you want to trust your camouflage or try to run away by jumping from tree to tree?";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
                     case 34:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You start jumping from tree to tree, but fall out instantly and break your leg. It turns out that the rustling you heard was multiple survivors. You are helpless as they kill you.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
                     case 35:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You are well enough hidden for the people to go away. Do you go check out the Cornucopia or stay hidden?";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
                     case 36:
-                        outputLabel.Text = "";
-                        redLabel.Text = "";
-                        blueLabel.Text = "";
+                        outputLabel.Text = "They notice you almost immediately and they kill you.";
+                        redLabel.Text = "Go to the Cornucopia.";
+                        blueLabel.Text = "Stay hidden.";
                         break;
                     case 37:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You decide to stay hidden in the tree. As you hide there, packs of wolves run beneath you. You understand that there is only one other remaining survivor. You see him walk past you. Do you trow your bag at him, stay hidden and wait for something to happen, or try to stab him with your knife.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        yellowImage.Visible = true;
+                        yellowLabel.Visible = true;
+
+                        yellowLabel.Text = "Stay hidden.";
+                        
                         break;
                     case 38:
-                        outputLabel.Text = "";
-                        redLabel.Text = "";
-                        blueLabel.Text = "";
+                        outputLabel.Text = "You decide to go and see the Cornucopia. You hide behind a bush on the edge of the clearing. You hear wolves in the distance. You understand that there is only one other remaining survivor. You see him walk past you. Do you trow your bag at him, stay hidden and wait for something to happen, or try to stab him with your knife.";
+                        redLabel.Text = "Try to stab him.";
+                        blueLabel.Text = "Throw your bag at him.";
+                        
+                        yellowImage.Visible = true;
+                        yellowLabel.Visible = true;
+
+                        yellowLabel.Text = "Stay hidden.";
+                        
                         break;
                     case 39:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "What exactly was that supposed to do? He turns around and kills you.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        yellowImage.Visible = false;
+                        yellowLabel.Visible = false;
+                        
                         break;
                     case 40:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "Good thing you trained in camouflage! He passes by without seeing you, and he is killed by the wolves. You win!";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        yellowImage.Visible = false;
+                        yellowLabel.Visible = false;
+                        
+                        Thread.Sleep(10000);
+                        scene = 42;
+                        
                         break;
                     case 41:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You go up to stab him, and realize that you have no idea how to use a knife. You try to use the blunt end , but he turns around and kills you.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        yellowImage.Visible = false;
+                        yellowLabel.Visible = false;
+                        
                         break;
                     case 42:
-                        outputLabel.Text = "";
+                        outputLabel.Text = "You won the hunger games! You and your family live happily ever after in victor's row.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
                         break;
