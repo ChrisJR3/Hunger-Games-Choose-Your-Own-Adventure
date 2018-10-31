@@ -212,6 +212,10 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Text = "Everyone is suprised, and your cousin is releived. Your family cries as you leave on the train.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        Thread.Sleep(10000);
+                        scene = 4;
+                        
                         break;
                     case 4:
                         outputLabel.Text = "You arrive at the capital and begin training for the battle ahead. Will you train in survival, camoflauge, or combat?";
@@ -238,6 +242,10 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Text = "Congradulatons! You are now ready to begin the Hunger Games.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        Thread.Sleep(10000);
+                        scene = 9;
+                        
                         break;
                     case 9:
                         outputLabel.Text = "Finally you arrive in the arena. You see a large forest behind you, and the cornucopia in front of you. Go for the cornucopiaor run into the forest?";
@@ -263,6 +271,10 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Text = "Probably a good choice. Anybody who goes to the cornicopia is in search of blood.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        Thread.Sleep(10000);
+                        scene = 14;
+                        
                         break;
                     case 14:
                         outputLabel.Text = "Tired after slaughtering a dozen kids, you barracade yourself in the Cornicopia and fall asleep. When you wake up you hear wolves in the distance. Do you want to try to hunt other kids, or stay where you are and try to hide?";
@@ -278,6 +290,10 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Text = "As you go to hunt the other survivors, you hear some people being eaten somewhere behind you. Good thing you didn't stay at the cornicopia.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        Thread.Sleep(10000);
+                        scene = 17;
+                        
                         break;
                     case 17:
                         outputLabel.Text = "You come across the last three remaining survivors. They appear to be in an alliance. Do you want to try to throw your suppllies at them, try to sneak up on them, or try to fight them in fair combat?";
@@ -323,6 +339,10 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Text = "As you run into the forest you pick up a bag of supplies. It continues food, water, and a knife.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        Thread.Sleep(10000);
+                        scene = 22;
+                        
                         break;
                     case 22:
                         outputLabel.Text = "It starts to get dark. Do you want to try and camouflage or run further into the forest?";
@@ -333,11 +353,30 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Text = "Probably a good choice. You run further and further away to the edge of the arena and sleep below a tree.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        Thread.Sleep(10000);
+                        scene = 24;
+                    
                         break;
                     case 24:
                         outputLabel.Text = "As you wake up in the morning you find a bush full of berries beside you.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        //percentage question
+                        if (berrySkill == 1)
+                        {
+                            scene = 26;
+                        }
+                        else if (randomChance == 1)
+                        {
+                            scene = 26;
+                        }
+                        else
+                        { 
+                            scene = 25;
+                        }
+                        
                         break;
                     case 25:
                         outputLabel.Text = "Starving, you go to eat the berries. As it turns out, they are poisonous and you die.";
@@ -398,6 +437,10 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Text = "You successfully camouflage yourself in the tree and fall asleep.";
                         redLabel.Text = "";
                         blueLabel.Text = "";
+                        
+                        Thread.Sleep(10000);
+                        scene = 33;
+                        
                         break;
                     case 33:
                         outputLabel.Text = "You wake up in the morning and hear people rustling around below you. Do you want to trust your camouflage or try to run away by jumping from tree to tree?";
