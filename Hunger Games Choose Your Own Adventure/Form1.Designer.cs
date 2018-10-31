@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.outputLabel = new System.Windows.Forms.Label();
-            this.blueLabel = new System.Windows.Forms.Label();
             this.redLabel = new System.Windows.Forms.Label();
+            this.blueLabel = new System.Windows.Forms.Label();
             this.redImage = new System.Windows.Forms.PictureBox();
             this.blueImage = new System.Windows.Forms.PictureBox();
             this.yellowImage = new System.Windows.Forms.PictureBox();
@@ -52,24 +52,24 @@
             this.outputLabel.Size = new System.Drawing.Size(658, 198);
             this.outputLabel.TabIndex = 0;
             // 
-            // blueLabel
-            // 
-            this.blueLabel.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blueLabel.ForeColor = System.Drawing.Color.Lime;
-            this.blueLabel.Location = new System.Drawing.Point(51, 304);
-            this.blueLabel.Name = "blueLabel";
-            this.blueLabel.Size = new System.Drawing.Size(100, 23);
-            this.blueLabel.TabIndex = 1;
-            this.blueLabel.Text = "Start?";
-            // 
             // redLabel
             // 
             this.redLabel.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redLabel.ForeColor = System.Drawing.Color.Lime;
-            this.redLabel.Location = new System.Drawing.Point(51, 374);
+            this.redLabel.Location = new System.Drawing.Point(51, 304);
             this.redLabel.Name = "redLabel";
-            this.redLabel.Size = new System.Drawing.Size(100, 23);
-            this.redLabel.TabIndex = 2;
+            this.redLabel.Size = new System.Drawing.Size(282, 23);
+            this.redLabel.TabIndex = 1;
+            this.redLabel.Text = "Start?";
+            // 
+            // blueLabel
+            // 
+            this.blueLabel.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blueLabel.ForeColor = System.Drawing.Color.Lime;
+            this.blueLabel.Location = new System.Drawing.Point(51, 374);
+            this.blueLabel.Name = "blueLabel";
+            this.blueLabel.Size = new System.Drawing.Size(282, 23);
+            this.blueLabel.TabIndex = 2;
             // 
             // redImage
             // 
@@ -96,7 +96,7 @@
             // yellowImage
             // 
             this.yellowImage.Image = global::Hunger_Games_Choose_Your_Own_Adventure.Properties.Resources.yellowButtonImage;
-            this.yellowImage.Location = new System.Drawing.Point(233, 304);
+            this.yellowImage.Location = new System.Drawing.Point(338, 304);
             this.yellowImage.Margin = new System.Windows.Forms.Padding(2);
             this.yellowImage.Name = "yellowImage";
             this.yellowImage.Size = new System.Drawing.Size(39, 32);
@@ -109,16 +109,16 @@
             // 
             this.yellowLabel.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yellowLabel.ForeColor = System.Drawing.Color.Lime;
-            this.yellowLabel.Location = new System.Drawing.Point(277, 304);
+            this.yellowLabel.Location = new System.Drawing.Point(386, 304);
             this.yellowLabel.Name = "yellowLabel";
-            this.yellowLabel.Size = new System.Drawing.Size(100, 23);
+            this.yellowLabel.Size = new System.Drawing.Size(338, 23);
             this.yellowLabel.TabIndex = 5;
             this.yellowLabel.Visible = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Hunger_Games_Choose_Your_Own_Adventure.Properties.Resources.greenButtonImage;
-            this.pictureBox1.Location = new System.Drawing.Point(233, 374);
+            this.pictureBox1.Location = new System.Drawing.Point(338, 374);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 32);
@@ -131,9 +131,9 @@
             // 
             this.greenLabel.Font = new System.Drawing.Font("Book Antiqua", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.greenLabel.ForeColor = System.Drawing.Color.Lime;
-            this.greenLabel.Location = new System.Drawing.Point(277, 374);
+            this.greenLabel.Location = new System.Drawing.Point(386, 374);
             this.greenLabel.Name = "greenLabel";
-            this.greenLabel.Size = new System.Drawing.Size(100, 23);
+            this.greenLabel.Size = new System.Drawing.Size(331, 23);
             this.greenLabel.TabIndex = 7;
             this.greenLabel.Visible = false;
             // 
@@ -149,8 +149,8 @@
             this.Controls.Add(this.yellowLabel);
             this.Controls.Add(this.blueImage);
             this.Controls.Add(this.redImage);
-            this.Controls.Add(this.redLabel);
             this.Controls.Add(this.blueLabel);
+            this.Controls.Add(this.redLabel);
             this.Controls.Add(this.outputLabel);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -166,8 +166,8 @@
         #endregion
 
         private System.Windows.Forms.Label outputLabel;
-        private System.Windows.Forms.Label blueLabel;
         private System.Windows.Forms.Label redLabel;
+        private System.Windows.Forms.Label blueLabel;
         private System.Windows.Forms.PictureBox redImage;
         private System.Windows.Forms.PictureBox blueImage;
         private System.Windows.Forms.PictureBox yellowImage;
