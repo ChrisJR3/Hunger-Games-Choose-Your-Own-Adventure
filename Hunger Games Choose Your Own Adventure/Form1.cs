@@ -50,15 +50,15 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                 }
                 else if (scene == 5)
                 {
-                    scene = 20;
+                    scene = 21;
                 }
                 else if (scene == 6)
                 {
-                    scene = 20;
+                    scene = 21;
                 }
                 else if (scene == 7)
                 {
-                    scene = 20;
+                    scene = 21;
                 }
                 else if (scene == 11)
                 {
@@ -70,13 +70,13 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                 }
                 else if (scene == 16)
                 {
-                    scene = 21;
+                    scene = 18;
                 }
                 else if (scene == 21)
                 {
                     scene = 32;
                 }
-                else if (scene == 33)
+                else if (scene == 32)
                 {
                     //percentage question
                     if (camoSkill == 1)
@@ -104,13 +104,74 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                 {
                     scene = 41;
                 }
-                else if (scene == 26)
+                else if (scene == 23)
                 {
                     scene = 28;
                 }
                 else if (scene == 27)
                 {
                     scene = 31;
+                }
+                // ending buttons
+                else if (scene == 2)
+                {
+                    scene = 44;
+                }
+                else if (scene == 10)
+                {
+                    scene = 44;
+                }
+                else if (scene == 12)
+                {
+                    scene = 44;
+                }
+                else if (scene == 15)
+                {
+                    scene = 44;
+                }
+                else if (scene == 18)
+                {
+                    scene = 44;
+                }
+                else if (scene == 19)
+                {
+                    scene = 44;
+                }
+                else if (scene == 30)
+                {
+                    scene = 44;
+                }
+                else if (scene == 31)
+                {
+                    scene = 44;
+                }
+                else if (scene == 25)
+                {
+                    scene = 44;
+                }
+                else if (scene == 28)
+                {
+                    scene = 44;
+                }
+                else if (scene == 34)
+                {
+                    scene = 44;
+                }
+                else if (scene == 36)
+                {
+                    scene = 44;
+                }
+                else if (scene == 39)
+                {
+                    scene = 44;
+                }
+                else if (scene == 41)
+                {
+                    scene = 44;
+                }
+                else if (scene == 42)
+                {
+                    scene = 44;
                 }
                 else
                 {
@@ -186,13 +247,13 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                 }
                 else if (scene == 16)
                 {
-                    scene = 18;
+                    scene = 20;
                 }
                 else if (scene == 21)
                 {
                     scene = 23;
                 }
-                else if (scene == 26)
+                else if (scene == 23)
                 {
                     scene = 27;
                 }
@@ -200,7 +261,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                 {
                     scene = 29;
                 }
-                else if (scene == 33)
+                else if (scene == 32)
                 {
                     scene = 34;
                 }
@@ -215,6 +276,63 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                 else if (scene == 38)
                 {
                     scene = 39;
+                }
+                //ending buttons
+                else if (scene == 2)
+                {
+                    scene = 45;
+                }
+                else if (scene == 10)
+                {
+                    scene = 45;
+                }
+                else if (scene == 12)
+                {
+                    scene = 45;
+                }
+                else if (scene == 15)
+                {
+                    scene = 45;
+                }
+                else if (scene == 18)
+                {
+                    scene = 45;
+                }
+                else if (scene == 19)
+                {
+                    scene = 45;
+                }
+                else if (scene == 30)
+                {
+                    scene = 45;
+                }
+                else if (scene == 31)
+                {
+                    scene = 45;
+                }
+                else if (scene == 25)
+                {
+                    scene = 45;
+                }
+                else if (scene == 28)
+                {
+                    scene = 45;
+                }
+                else if (scene == 34)
+                {
+                    scene = 45;
+                }
+                else if (scene == 36)
+                {
+                    scene = 45;
+                }
+                else if (scene == 39)
+                {
+                    scene = 45;
+                }
+                else if (scene == 41)
+                {
+                    scene = 45;
                 }
             }
             else if (e.KeyCode == Keys.N)  //Yellow button press
@@ -240,6 +358,10 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                 {
                     scene = 40;
                 }
+                else if (scene == 42)
+                {
+                    scene = 45;
+                }
                 else
                 {
                     outputLabel.Text = "There has been an error.";
@@ -255,13 +377,23 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     break;
                 case 1:
                     outputLabel.Text = "Your cousin has been chosen to particiate in the hunger games. Do you want to take their place or go home?";
-                    blueLabel.Text = "Volunteer.";
-                    redLabel.Text = "Go home.";
+                    redLabel.Text = "Volunteer.";
+                    blueLabel.Text = "Go home.";
                     break;
                 case 2:
                     outputLabel.Text = "You go home feeling awful. You live out the rest of your mundane life carrying this guit.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
+
                     break;
                 case 3:
                     outputLabel.Text = "Everyone is suprised, and your cousin is releived. Your family cries as you leave on the train.";
@@ -272,7 +404,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(5000);
 
                     yellowImage.Visible = true;
                     yellowLabel.Visible = true;
@@ -295,7 +427,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(2000);
 
                     outputLabel.Text = "Congradulatons! You are now ready to begin the Hunger Games.";
                     blueLabel.Text = "";
@@ -305,7 +437,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(2000);
 
                     outputLabel.Text = "Finally you arrive in the arena. You see a large forest behind you, and the cornucopia in front of you. Go for the cornucopiaor run into the forest?";
                     blueLabel.Text = "Run to the Cornicopia.";
@@ -324,7 +456,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(2000);
 
                     outputLabel.Text = "Congradulatons! You are now ready to begin the Hunger Games.";
                     blueLabel.Text = "";
@@ -334,7 +466,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(2000);
 
                     outputLabel.Text = "Finally you arrive in the arena. You see a large forest behind you, and the cornucopia in front of you. Go for the cornucopiaor run into the forest?";
                     blueLabel.Text = "Run to the Cornicopia.";
@@ -353,7 +485,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(2000);
                     
                     outputLabel.Text = "Congradulatons! You are now ready to begin the Hunger Games.";
                     blueLabel.Text = "";
@@ -363,9 +495,9 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(2000);
 
-                    outputLabel.Text = "Finally you arrive in the arena. You see a large forest behind you, and the cornucopia in front of you. Go for the cornucopiaor run into the forest?";
+                    outputLabel.Text = "Finally you arrive in the arena. You see a large forest behind you, and the cornucopia in front of you. Go for the cornicopia or run into the forest?";
                     blueLabel.Text = "Run to the Cornicopia.";
                     redLabel.Text = "Run into the forest.";
 
@@ -374,16 +506,34 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You get stabbed and die.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
                     break;
                 case 11:
                     outputLabel.Text = "You manage to kill all but one of the other kids. Do you attempt to ally yourself with the other survivor, or do you try to kill her?";
-                    blueLabel.Text = "Kill her.";
-                    redLabel.Text = "Attemot to ally yourself.";
+                    redLabel.Text = "Kill her.";
+                    blueLabel.Text = "Attempt to ally yourself.";
                     break;
                 case 12:
                     outputLabel.Text = "She pretends to want to work with you, then stabs you in the back. Literally. You die.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
                     break;
                 case 13:
                     outputLabel.Text = "Probably a good choice. Anybody who goes to the cornicopia is in search of blood.";
@@ -394,16 +544,25 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(5000);
 
                     outputLabel.Text = "Tired after slaughtering a dozen kids, you barracade yourself in the Cornicopia and fall asleep. When you wake up you hear wolves in the distance. Do you want to try to hunt other kids, or stay where you are and try to hide?";
-                    blueLabel.Text = "Hunt the other survivors.";
-                    redLabel.Text = "Hide from the wolves.";
+                    redLabel.Text = "Hunt the other survivors.";
+                    blueLabel.Text = "Hide from the wolves.";
                     break;
                 case 15:
                     outputLabel.Text = "You try to hide behind a few boxes. The wolves see you and eat you.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
                     break;
                 case 16:
                     outputLabel.Text = "As you go to hunt the other survivors, you hear some people being eaten somewhere behind you. Good thing you didn't stay at the cornicopia.";
@@ -414,7 +573,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(5000);
 
                     outputLabel.Text = "You come across the last three remaining survivors. They appear to be in an alliance. Do you want to try to throw your suppllies at them, try to sneak up on them, or try to fight them in fair combat?";
                     blueLabel.Text = "Attack the alliance.";
@@ -433,6 +592,15 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     yellowImage.Visible = false;
                     yellowLabel.Visible = false;
 
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
+
                     break;
                 case 19:
                     outputLabel.Text = "You try to sneak up on them, but they hear you a mile away and kill you.";
@@ -441,6 +609,15 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     yellowImage.Visible = false;
                     yellowLabel.Visible = false;
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
 
                     break;
                 case 20:
@@ -455,7 +632,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(5000);
 
                     outputLabel.Refresh();
                     blueLabel.Refresh();
@@ -466,6 +643,15 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You won the hunger games! You and your family live happily ever after in victor's row.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+
+                    Thread.Sleep(1000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
                     break;
                 case 21:
 
@@ -477,11 +663,11 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(6000);
 
                     outputLabel.Text = "It starts to get dark. Do you want to try and camouflage or run further into the forest?";
-                    blueLabel.Text = "Camouflage yourself in the tree.";
-                    redLabel.Text = "Run into the forest.";
+                    blueLabel.Text = "Run away";
+                    redLabel.Text = "Camouflage yourself in the tree..";
                     break;
                 case 23:
                     outputLabel.Text = "Probably a good choice. You run further and further away to the edge of the arena and sleep below a tree.";
@@ -492,7 +678,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(6500);
 
                     outputLabel.Text = "As you wake up in the morning you find a bush full of berries beside you.";
                     blueLabel.Text = "";
@@ -505,9 +691,9 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         blueLabel.Refresh();
                         redLabel.Refresh();
 
-                        outputLabel.Text = "You recognize them as poisonous and put them in your pocket for later. You hear wolves running around near you.";
-                        blueLabel.Text = "";
-                        redLabel.Text = "";
+                        outputLabel.Text = "You recognize them as poisonous and put them in your pocket for later. You hear wolves running around near you. Do you want to run away or try to kill them with your knife?";
+                        blueLabel.Text = "Run away.";
+                        redLabel.Text = "Try to kill them.";
                     }
                     else if (randomChance == 1)
                     {
@@ -516,8 +702,8 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         redLabel.Refresh();
 
                         outputLabel.Text = "You recognize them as poisonous and put them in your pocket for later. You hear wolves running around near you.";
-                        blueLabel.Text = "";
-                        redLabel.Text = "";
+                        blueLabel.Text = "Run away.";
+                        redLabel.Text = "Try to kill them.";
                     }
                     else
                     {
@@ -528,12 +714,26 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Text = "Starving, you go to eat the berries. As it turns out, they are poisonous and you die.";
                         blueLabel.Text = "";
                         redLabel.Text = "";
+
+                        Thread.Sleep(5000);
+                        outputLabel.Refresh();
+                        blueLabel.Refresh();
+                        redLabel.Refresh();
+
+                        outputLabel.Text = "Game over! Would you like to play again?";
+                        blueLabel.Text = "Play again.";
+                        redLabel.Text = "Stop playing.";
                     }
                     break;
                 case 27:
                     outputLabel.Text = "As you run away you encounter the last remaining survivor. Do you want to switch the berries in his food supply with the poisonous ones, hide in a bush, or run at him with your knife?";
-                    blueLabel.Text = "";
-                    redLabel.Text = "";
+                    blueLabel.Text = "Switch the berries.";
+                    redLabel.Text = "Attack the survivor.";
+
+                    yellowLabel.Visible = true;
+                    yellowImage.Visible = true;
+
+                    yellowLabel.Text = "Hide in a bush.";
                     break;
                 case 28:
                     outputLabel.Text = "You run bravely at them with your knife and are eaten almost instantly.";
@@ -557,11 +757,20 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(4000);
 
                     outputLabel.Text = "You won the hunger games! You and your family live happily ever after in victor's row.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
                     break;
                 case 30:
                     outputLabel.Text = "You try to hide in a bush, but he sees you instantly and stabs you.";
@@ -571,6 +780,15 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     yellowImage.Visible = false;
                     yellowLabel.Visible = false;
 
+                    Thread.Sleep(10000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
+
                     break;
                 case 31:
                     outputLabel.Text = "You run at him with your knife, but he turns around and stabs you. You die.";
@@ -579,6 +797,15 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     yellowImage.Visible = false;
                     yellowLabel.Visible = false;
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
 
                     break;
                 case 32:
@@ -590,31 +817,49 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(4000);
 
                     outputLabel.Text = "You wake up in the morning and hear people rustling around below you. Do you want to trust your camouflage or try to run away by jumping from tree to tree?";
-                    blueLabel.Text = "";
-                    redLabel.Text = "";
+                    blueLabel.Text = "Jump.";
+                    redLabel.Text = "Stay.";
                     break;
                 case 34:
                     outputLabel.Text = "You start jumping from tree to tree, but fall out instantly and break your leg. It turns out that the rustling you heard was multiple survivors. You are helpless as they kill you.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
                     break;
                 case 35:
-                    outputLabel.Text = "You are well enough hidden for the people to go away. Do you go check out the Cornucopia or stay hidden?";
-                    blueLabel.Text = "";
-                    redLabel.Text = "";
+                    outputLabel.Text = "You are well enough hidden for the people to go away. Afteer a while you get bored. Do you go check out the Cornucopia or stay hidden?";
+                    blueLabel.Text = "Cornucopia.";
+                    redLabel.Text = "Stay hidden.";
                     break;
                 case 36:
                     outputLabel.Text = "They notice you almost immediately and they kill you.";
-                    blueLabel.Text = "Go to the Cornucopia.";
-                    redLabel.Text = "Stay hidden.";
+                    blueLabel.Text = "";
+                    redLabel.Text = "";
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
                     break;
                 case 37:
                     outputLabel.Text = "You decide to stay hidden in the tree. As you hide there, packs of wolves run beneath you. You understand that there is only one other remaining survivor. You see him walk past you. Do you trow your bag at him, stay hidden and wait for something to happen, or try to stab him with your knife.";
-                    blueLabel.Text = "";
-                    redLabel.Text = "";
+                    blueLabel.Text = "Throw your bag at him.";
+                    redLabel.Text = "Try to stab him.";
 
                     yellowImage.Visible = true;
                     yellowLabel.Visible = true;
@@ -641,6 +886,14 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     yellowImage.Visible = false;
                     yellowLabel.Visible = false;
 
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
                     break;
                 case 40:
                     outputLabel.Text = "Good thing you trained in camouflage! He passes by without seeing you, and he is killed by the wolves. You win!";
@@ -654,11 +907,20 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(6000);
 
                     outputLabel.Text = "You won the hunger games! You and your family live happily ever after in victor's row.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
                     break;
                 case 41:
                     outputLabel.Text = "You go up to stab him, and realize that you have no idea how to use a knife. You try to use the blunt end , but he turns around and kills you.";
@@ -668,22 +930,46 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     yellowImage.Visible = false;
                     yellowLabel.Visible = false;
 
+                    Thread.Sleep(10000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
+
                     break;
                 case 42:
                     outputLabel.Text = "You won the hunger games! You and your family live happily ever after in victor's row.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+
+                    Thread.Sleep(5000);
+                    outputLabel.Refresh();
+                    blueLabel.Refresh();
+                    redLabel.Refresh();
+
+                    outputLabel.Text = "Game over! Would you like to play again?";
+                    blueLabel.Text = "Play again.";
+                    redLabel.Text = "Stop playing.";
                     break;
                 case 43:
                     outputLabel.Text = "Game over! Do you want to play again or quit the game?";
                     blueLabel.Text = "Play again.";
                     redLabel.Text = "Quit game.";
                     break;
+                case 44:
+                    this.Close();
+                    break;
+                case 45:
+                    scene = 1;
+                    blueLabel.Text = "";
+                    redLabel.Text = "";
+                    break;
                 default:
                     break;
             }
-
-
         }
     }
 }
