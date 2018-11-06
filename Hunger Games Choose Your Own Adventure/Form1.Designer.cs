@@ -139,7 +139,7 @@
             this.Controls.Add(this.redLabel);
             this.Controls.Add(this.outputLabel);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Hunger Games Choose Your Own Adventure";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.redImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blueImage)).EndInit();

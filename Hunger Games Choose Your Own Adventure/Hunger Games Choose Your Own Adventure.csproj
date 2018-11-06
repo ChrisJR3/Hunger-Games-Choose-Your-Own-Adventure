@@ -91,5 +91,44 @@
   <ItemGroup>
     <None Include="Resources\yellow_50x50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bow&amp;ArrowIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet train.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camo in firewst.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camo training.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Catotraining.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chosen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corn run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\run forest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\running more forest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stabbed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\survival training.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Training grounds.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
