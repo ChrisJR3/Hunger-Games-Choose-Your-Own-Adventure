@@ -130,5 +130,110 @@
   <ItemGroup>
     <None Include="Resources\Training grounds.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene27 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Going home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Getting stabbed in the back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene39.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

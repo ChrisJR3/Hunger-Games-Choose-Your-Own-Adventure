@@ -410,7 +410,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     Thread.Sleep(5000);
 
-                    yellowImage.Visible = true;
+                    yellowLetterLabel.Visible = true;
                     yellowLabel.Visible = true;
 
                     outputLabel.Text = "You arrive at the capital and begin training for the battle ahead. Will you train in survival, camoflauge, or combat?";
@@ -425,7 +425,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Text = "";
                     redLabel.Text = "";
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     outputLabel.Refresh();
@@ -442,7 +442,6 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
-                    imageBox.Image = Properties.Resources.scene8;
 
                     Thread.Sleep(2000);
 
@@ -458,7 +457,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene6;
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     outputLabel.Refresh();
@@ -470,7 +469,6 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "Congradulatons! You are now ready to begin the Hunger Games.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
-                    imageBox.Image = Properties.Resources.scene8;
 
                     outputLabel.Refresh();
                     blueLabel.Refresh();
@@ -490,7 +488,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene7;
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     outputLabel.Refresh();
@@ -502,7 +500,6 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "Congradulatons! You are now ready to begin the Hunger Games.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
-                    imageBox.Image = Properties.Resources.scene8;
 
                     outputLabel.Refresh();
                     blueLabel.Refresh();
@@ -604,7 +601,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "Throw your supplies at them.";
                     imageBox.Image = Properties.Resources.scene17;
 
-                    yellowImage.Visible = true;
+                    yellowLetterLabel.Visible = true;
                     yellowLabel.Visible = true;
 
                     yellowLabel.Text = "Try to sneak up on them.";
@@ -615,7 +612,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene18;
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     Thread.Sleep(5000);
@@ -635,7 +632,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene19;
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     Thread.Sleep(5000);
@@ -655,7 +652,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene21;
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     outputLabel.Refresh();
@@ -773,7 +770,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     imageBox.Image = Properties.Resources.scene27;
 
                     yellowLabel.Visible = true;
-                    yellowImage.Visible = true;
+                    yellowLetterLabel.Visible = true;
 
                     yellowLabel.Text = "Hide in a bush.";
                     break;
@@ -783,7 +780,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "Switch the berries";
                     imageBox.Image = Properties.Resources.scene28;
 
-                    yellowImage.Visible = true;
+                    yellowLetterLabel.Visible = true;
                     yellowLabel.Visible = true;
 
                     yellowLabel.Text = "Hide in a bush.";
@@ -794,7 +791,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene29;
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     outputLabel.Refresh();
@@ -824,7 +821,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene30;
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     Thread.Sleep(10000);
@@ -844,7 +841,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene31;
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     Thread.Sleep(5000);
@@ -919,7 +916,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "Try to stab him.";
                     imageBox.Image = Properties.Resources.scene37;
 
-                    yellowImage.Visible = true;
+                    yellowLetterLabel.Visible = true;
                     yellowLabel.Visible = true;
 
                     yellowLabel.Text = "Stay hidden.";
@@ -931,7 +928,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "Throw your bag at him.";
                     imageBox.Image = Properties.Resources.scene38;
 
-                    yellowImage.Visible = true;
+                    yellowLetterLabel.Visible = true;
                     yellowLabel.Visible = true;
 
                     yellowLabel.Text = "Stay hidden.";
@@ -943,7 +940,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene39;
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     Thread.Sleep(5000);
@@ -962,7 +959,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene40;
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     outputLabel.Refresh();
@@ -991,7 +988,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     blueLabel.Text = "";
                     redLabel.Text = "";
 
-                    yellowImage.Visible = false;
+                    yellowLetterLabel.Visible = false;
                     yellowLabel.Visible = false;
 
                     Thread.Sleep(10000);
