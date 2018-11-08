@@ -91,6 +91,15 @@ namespace Hunger_Games_Choose_Your_Own_Adventure.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream goodbye {
+            get {
+                return ResourceManager.GetStream("goodbye", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap greenButtonImage {
@@ -547,6 +556,24 @@ namespace Hunger_Games_Choose_Your_Own_Adventure.Properties {
             get {
                 object obj = ResourceManager.GetObject("scene9", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream scream {
+            get {
+                return ResourceManager.GetStream("scream", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream yay {
+            get {
+                return ResourceManager.GetStream("yay", resourceCulture);
             }
         }
         

@@ -235,5 +235,23 @@
   <ItemGroup>
     <None Include="Resources\scene39.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\154593__ecfike__goodbye-man.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\219858__adriancalzon__scream-01.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\162395__zut50__yay.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\243376__johnsonbrandediting__human-male-scream-2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\198121__18hiltc__man-getting-shot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\353923__dr-skitz__yay.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

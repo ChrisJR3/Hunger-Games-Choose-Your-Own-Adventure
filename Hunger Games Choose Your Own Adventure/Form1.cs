@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 using System.Threading;
 
 namespace Hunger_Games_Choose_Your_Own_Adventure
@@ -23,6 +24,10 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
         int combatSkill = 0;
         int berrySkill = 0;
         int camoSkill = 0;
+
+        SoundPlayer goodbyeSound = new SoundPlayer(Properties.Resources.goodbye);
+        SoundPlayer yaySound = new SoundPlayer(Properties.Resources.yay);
+        SoundPlayer screamSound = new SoundPlayer(Properties.Resources.scream);
 
         public Form1()
         {
@@ -529,6 +534,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You get stabbed and die.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
                     survivorNumberLabel.Text = "23";
                     imageBox.Image = Properties.Resources.scene10;
 
@@ -555,6 +561,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "She pretends to want to work with you, then stabs you in the back. Literally. You die.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
                     survivorNumberLabel.Text = "12";
                     imageBox.Image = Properties.Resources.scene12;
 
@@ -594,6 +601,8 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You try to hide behind a few boxes. The wolves see you and eat you.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
+                    screamSound.Play();
                     survivorNumberLabel.Text = "6";
                     imageBox.Image = Properties.Resources.scene15;
 
@@ -614,6 +623,8 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "As you go to hunt the other survivors, you hear some people being eaten somewhere behind you. Good thing you didn't stay at the cornicopia.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
+
                     survivorNumberLabel.Text = "4";
 
                     outputLabel.Refresh();
@@ -637,6 +648,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "What exactly was that supposed to do? They turn around and kill you.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
                     imageBox.Image = Properties.Resources.scene18;
                     survivorNumberLabel.Text = "3";
 
@@ -660,6 +672,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                 case 19:
                     outputLabel.Text = "You try to sneak up on them, but they hear you a mile away and kill you.";
                     blueLabel.Text = "";
+                    screamSound.Play();
                     redLabel.Text = "";
                     survivorNumberLabel.Text = "3";
                     imageBox.Image = Properties.Resources.scene19;
@@ -708,9 +721,10 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You won the hunger games! You and your family live happily ever after in victor's row.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    yaySound.Play();
                     imageBox.Image = Properties.Resources.scene42;
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(5000);
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
@@ -799,6 +813,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Text = "Starving, you go to eat the berries. As it turns out, they are poisonous and you die.";
                         blueLabel.Text = "";
                         redLabel.Text = "";
+                        screamSound.Play();
                         survivorNumberLabel.Text = "4";
                         imageBox.Image = Properties.Resources.scene25;
 
@@ -831,6 +846,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You run bravely at them with your knife and are eaten almost instantly.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
                     survivorNumberLabel.Text = "1";
                     imageBox.Image = Properties.Resources.scene28;
 
@@ -860,6 +876,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You won the hunger games! You and your family live happily ever after in victor's row.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    yaySound.Play();
                     imageBox.Image = Properties.Resources.scene42;
 
                     Thread.Sleep(5000);
@@ -877,6 +894,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You try to hide in a bush, but he sees you instantly and stabs you.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
                     survivorNumberLabel.Text = "1";
                     imageBox.Image = Properties.Resources.scene30;
                     
@@ -900,6 +918,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You run at him with your knife, but he turns around and stabs you. You die.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
                     survivorNumberLabel.Text = "1";
                     imageBox.Image = Properties.Resources.scene31;
 
@@ -943,6 +962,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You start jumping from tree to tree, but fall out instantly and break your leg. It turns out that the rustling you heard was multiple survivors. You are helpless as they kill you.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
                     survivorNumberLabel.Text = "6";
                     imageBox.Image = Properties.Resources.scene34;
 
@@ -970,6 +990,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "They notice you almost immediately and they kill you.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
                     survivorNumberLabel.Text = "4";
                     imageBox.Image = Properties.Resources.scene36;
 
@@ -1014,6 +1035,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "What exactly was that supposed to do? He turns around and kills you.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
                     survivorNumberLabel.Text = "1";
                     imageBox.Image = Properties.Resources.scene39;
                     
@@ -1052,6 +1074,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     survivorNumberLabel.Text = "";
                     outputLabel.Text = "You won the hunger games! You and your family live happily ever after in victor's row.";
                     blueLabel.Text = "";
+                    yaySound.Play();
                     redLabel.Text = "";
                     imageBox.Image = Properties.Resources.scene42;
 
@@ -1070,6 +1093,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You go up to stab him, and realize that you have no idea how to use a knife. You try to use the blunt end , but he turns around and kills you.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    screamSound.Play();
                     survivorNumberLabel.Text = "1";
                     
                     yellowLabel.Visible = false;
@@ -1093,6 +1117,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "You won the hunger games! You and your family live happily ever after in victor's row.";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    yaySound.Play();
 
                     Thread.Sleep(5000);
                     outputLabel.Refresh();
@@ -1117,6 +1142,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Text = "Thanks for playing!";
                     blueLabel.Text = "";
                     redLabel.Text = "";
+                    goodbyeSound.Play();
                     Thread.Sleep(3000);
 
                     this.Close();
