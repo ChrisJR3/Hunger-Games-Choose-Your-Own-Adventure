@@ -37,6 +37,8 @@
             this.redLetterLabel = new System.Windows.Forms.Label();
             this.yellowLetterLabel = new System.Windows.Forms.Label();
             this.blueLetterLabel = new System.Windows.Forms.Label();
+            this.survivorCounterLabel = new System.Windows.Forms.Label();
+            this.survivorNumberLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +48,7 @@
             this.outputLabel.ForeColor = System.Drawing.Color.White;
             this.outputLabel.Location = new System.Drawing.Point(-2, 0);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(658, 198);
+            this.outputLabel.Size = new System.Drawing.Size(708, 242);
             this.outputLabel.TabIndex = 0;
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -54,7 +56,7 @@
             // 
             this.redLabel.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redLabel.ForeColor = System.Drawing.Color.Red;
-            this.redLabel.Location = new System.Drawing.Point(50, 328);
+            this.redLabel.Location = new System.Drawing.Point(424, 244);
             this.redLabel.Name = "redLabel";
             this.redLabel.Size = new System.Drawing.Size(282, 23);
             this.redLabel.TabIndex = 1;
@@ -64,7 +66,7 @@
             // 
             this.blueLabel.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blueLabel.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.blueLabel.Location = new System.Drawing.Point(50, 373);
+            this.blueLabel.Location = new System.Drawing.Point(424, 318);
             this.blueLabel.Name = "blueLabel";
             this.blueLabel.Size = new System.Drawing.Size(282, 23);
             this.blueLabel.TabIndex = 2;
@@ -73,7 +75,7 @@
             // 
             this.yellowLabel.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yellowLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.yellowLabel.Location = new System.Drawing.Point(50, 418);
+            this.yellowLabel.Location = new System.Drawing.Point(424, 281);
             this.yellowLabel.Name = "yellowLabel";
             this.yellowLabel.Size = new System.Drawing.Size(282, 23);
             this.yellowLabel.TabIndex = 5;
@@ -81,10 +83,10 @@
             // 
             // imageBox
             // 
-            this.imageBox.Location = new System.Drawing.Point(337, 253);
+            this.imageBox.Location = new System.Drawing.Point(2, 244);
             this.imageBox.Margin = new System.Windows.Forms.Padding(2);
             this.imageBox.Name = "imageBox";
-            this.imageBox.Size = new System.Drawing.Size(369, 197);
+            this.imageBox.Size = new System.Drawing.Size(369, 207);
             this.imageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imageBox.TabIndex = 7;
             this.imageBox.TabStop = false;
@@ -94,7 +96,7 @@
             this.redLetterLabel.BackColor = System.Drawing.Color.Red;
             this.redLetterLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.redLetterLabel.ForeColor = System.Drawing.Color.White;
-            this.redLetterLabel.Location = new System.Drawing.Point(-2, 328);
+            this.redLetterLabel.Location = new System.Drawing.Point(376, 244);
             this.redLetterLabel.Name = "redLetterLabel";
             this.redLetterLabel.Size = new System.Drawing.Size(31, 23);
             this.redLetterLabel.TabIndex = 8;
@@ -106,7 +108,7 @@
             this.yellowLetterLabel.BackColor = System.Drawing.Color.Olive;
             this.yellowLetterLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yellowLetterLabel.ForeColor = System.Drawing.Color.White;
-            this.yellowLetterLabel.Location = new System.Drawing.Point(-2, 418);
+            this.yellowLetterLabel.Location = new System.Drawing.Point(376, 281);
             this.yellowLetterLabel.Name = "yellowLetterLabel";
             this.yellowLetterLabel.Size = new System.Drawing.Size(31, 23);
             this.yellowLetterLabel.TabIndex = 9;
@@ -118,12 +120,32 @@
             this.blueLetterLabel.BackColor = System.Drawing.Color.Teal;
             this.blueLetterLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.blueLetterLabel.ForeColor = System.Drawing.Color.White;
-            this.blueLetterLabel.Location = new System.Drawing.Point(-2, 373);
+            this.blueLetterLabel.Location = new System.Drawing.Point(376, 318);
             this.blueLetterLabel.Name = "blueLetterLabel";
             this.blueLetterLabel.Size = new System.Drawing.Size(31, 23);
             this.blueLetterLabel.TabIndex = 10;
             this.blueLetterLabel.Text = "B";
             this.blueLetterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // survivorCounterLabel
+            // 
+            this.survivorCounterLabel.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.survivorCounterLabel.ForeColor = System.Drawing.Color.White;
+            this.survivorCounterLabel.Location = new System.Drawing.Point(376, 385);
+            this.survivorCounterLabel.Name = "survivorCounterLabel";
+            this.survivorCounterLabel.Size = new System.Drawing.Size(164, 23);
+            this.survivorCounterLabel.TabIndex = 11;
+            this.survivorCounterLabel.Text = "Remaining Survivors:";
+            this.survivorCounterLabel.Visible = false;
+            // 
+            // survivorNumberLabel
+            // 
+            this.survivorNumberLabel.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.survivorNumberLabel.ForeColor = System.Drawing.Color.White;
+            this.survivorNumberLabel.Location = new System.Drawing.Point(542, 385);
+            this.survivorNumberLabel.Name = "survivorNumberLabel";
+            this.survivorNumberLabel.Size = new System.Drawing.Size(164, 23);
+            this.survivorNumberLabel.TabIndex = 12;
             // 
             // Form1
             // 
@@ -131,6 +153,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(706, 450);
+            this.Controls.Add(this.survivorNumberLabel);
+            this.Controls.Add(this.survivorCounterLabel);
             this.Controls.Add(this.blueLetterLabel);
             this.Controls.Add(this.yellowLetterLabel);
             this.Controls.Add(this.redLetterLabel);
@@ -158,6 +182,8 @@
         private System.Windows.Forms.Label redLetterLabel;
         private System.Windows.Forms.Label yellowLetterLabel;
         private System.Windows.Forms.Label blueLetterLabel;
+        private System.Windows.Forms.Label survivorCounterLabel;
+        private System.Windows.Forms.Label survivorNumberLabel;
     }
 }
 
