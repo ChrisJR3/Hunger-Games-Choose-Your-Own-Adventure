@@ -392,6 +392,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     Thread.Sleep(5000);
                     outputLabel.Refresh();
+                    imageBox.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
@@ -409,6 +410,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     outputLabel.Refresh();
                     blueLabel.Refresh();
+                    imageBox.Refresh();
                     redLabel.Refresh();
 
                     Thread.Sleep(5000);
@@ -443,6 +445,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     survivorNumberLabel.Text = "24";
 
                     outputLabel.Refresh();
+                    imageBox.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
@@ -464,6 +467,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     outputLabel.Refresh();
                     blueLabel.Refresh();
+                    imageBox.Refresh();
                     redLabel.Refresh();
 
                     Thread.Sleep(2000);
@@ -476,6 +480,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     outputLabel.Refresh();
                     blueLabel.Refresh();
+                    imageBox.Refresh();
                     redLabel.Refresh();
 
                     Thread.Sleep(2000);
@@ -497,6 +502,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     Thread.Sleep(2000);
                     
@@ -528,6 +534,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     Thread.Sleep(5000);
                     outputLabel.Refresh();
+                    imageBox.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
                     survivorCounterLabel.Visible = false;
@@ -554,6 +561,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     Thread.Sleep(5000);
                     outputLabel.Refresh();
                     blueLabel.Refresh();
+                    imageBox.Refresh();
                     redLabel.Refresh();
                     survivorCounterLabel.Visible = false;
                     survivorNumberLabel.Text = "";
@@ -573,6 +581,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     Thread.Sleep(5000);
 
@@ -590,6 +599,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     Thread.Sleep(5000);
                     outputLabel.Refresh();
+                    imageBox.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
 
@@ -608,6 +618,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     outputLabel.Refresh();
                     blueLabel.Refresh();
+                    imageBox.Refresh();
                     redLabel.Refresh();
                     imageBox.Image = Properties.Resources.scene16;
 
@@ -635,6 +646,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     Thread.Sleep(5000);
                     outputLabel.Refresh();
                     blueLabel.Refresh();
+                    imageBox.Refresh();
                     redLabel.Refresh();
 
                     survivorCounterLabel.Visible = false;
@@ -657,6 +669,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     Thread.Sleep(5000);
                     outputLabel.Refresh();
                     blueLabel.Refresh();
+                    imageBox.Refresh();
                     redLabel.Refresh();
 
                     survivorCounterLabel.Visible = false;
@@ -679,12 +692,14 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     Thread.Sleep(5000);
 
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     Thread.Sleep(1000);
 
@@ -716,6 +731,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     Thread.Sleep(6000);
 
@@ -734,6 +750,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
 
                     outputLabel.Refresh();
                     blueLabel.Refresh();
+                    imageBox.Refresh();
                     redLabel.Refresh();
 
                     Thread.Sleep(6500);
@@ -751,6 +768,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Refresh();
                         blueLabel.Refresh();
                         redLabel.Refresh();
+                        imageBox.Refresh();
                         imageBox.Image = Properties.Resources.scene26;
 
                         outputLabel.Text = "You recognize them as poisonous and put them in your pocket for later. You hear wolves running around near you. Do you want to run away or try to kill them with your knife?";
@@ -762,6 +780,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     {
                         outputLabel.Refresh();
                         blueLabel.Refresh();
+                        imageBox.Refresh();
                         redLabel.Refresh();
 
                         outputLabel.Text = "You recognize them as poisonous and put them in your pocket for later. You hear wolves running around near you.";
@@ -775,6 +794,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Refresh();
                         blueLabel.Refresh();
                         redLabel.Refresh();
+                        imageBox.Refresh();
 
                         outputLabel.Text = "Starving, you go to eat the berries. As it turns out, they are poisonous and you die.";
                         blueLabel.Text = "";
@@ -786,6 +806,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                         outputLabel.Refresh();
                         blueLabel.Refresh();
                         redLabel.Refresh();
+                        imageBox.Refresh();
 
                         survivorCounterLabel.Visible = false;
                         survivorNumberLabel.Text = "";
@@ -845,6 +866,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     outputLabel.Text = "Game over! Would you like to play again?";
                     blueLabel.Text = "Play again.";
@@ -864,6 +886,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     survivorCounterLabel.Visible = false;
                     survivorNumberLabel.Text = "";
@@ -886,6 +909,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     survivorCounterLabel.Visible = false;
                     survivorNumberLabel.Text = "";
@@ -905,6 +929,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     Thread.Sleep(4000);
 
@@ -925,6 +950,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     survivorCounterLabel.Visible = false;
                     survivorNumberLabel.Text = "";
@@ -951,6 +977,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     survivorCounterLabel.Visible = false;
                     survivorNumberLabel.Text = "";
@@ -996,6 +1023,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     survivorCounterLabel.Visible = false;
                     survivorNumberLabel.Text = "";
@@ -1016,6 +1044,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     Thread.Sleep(6000);
 
@@ -1030,6 +1059,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     outputLabel.Text = "Game over! Would you like to play again?";
                     blueLabel.Text = "Play again.";
@@ -1048,6 +1078,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     survivorCounterLabel.Visible = false;
                     survivorNumberLabel.Text = "";
@@ -1067,6 +1098,7 @@ namespace Hunger_Games_Choose_Your_Own_Adventure
                     outputLabel.Refresh();
                     blueLabel.Refresh();
                     redLabel.Refresh();
+                    imageBox.Refresh();
 
                     outputLabel.Text = "Game over! Would you like to play again?";
                     blueLabel.Text = "Play again.";
